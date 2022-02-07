@@ -52,7 +52,7 @@ public class Program {
 		cal.setTime(incomeDate);
 		int calMonth = 1 + cal.get(Calendar.MONTH);
 		int calYear = cal.get(Calendar.YEAR);
-		System.out.println(worker);
+		System.out.print(worker);
 		System.out.printf("Income for %s: %.2f", sdf2.format(incomeDate), worker.income(calYear, calMonth));
 		
 		
