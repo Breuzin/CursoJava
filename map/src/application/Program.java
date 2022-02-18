@@ -67,6 +67,7 @@ public class Program {
 		
 		Product ps = new Product("Tv", 900.0);
 		
+		//only be true if Class Product have equals and hashCode
 		System.out.println("Contains 'ps' key: " + stock.containsKey(ps));
 	}
 
