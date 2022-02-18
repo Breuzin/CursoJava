@@ -5,13 +5,13 @@ import java.util.List;
 
 public class PrintService {
 
-	private List<Integer> list = new ArrayList<>();
+	private List<Object> list = new ArrayList<>();
 	
-	public void addValue(int value) {
+	public void addValue(Object value) {
 		list.add(value);
 	}
 	
-	public int first() {
+	public Object first() {
 		if (list.isEmpty()) {
 			throw new IllegalArgumentException("List is empty");
 		}
@@ -24,7 +24,6 @@ public class PrintService {
 			System.out.print(list.get(0));
 		}
 		for (int i = 1; i < list.size(); i++) {
-			list.get(i);
 			System.out.print(", " + list.get(i));
 		}
 		System.out.println("]");

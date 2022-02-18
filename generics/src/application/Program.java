@@ -14,6 +14,7 @@ public class Program {
 		
 		System.out.print("How many values? ");
 		int n = sc.nextInt();
+		
 		PrintService ps = new PrintService();
 		
 		for (int i = 0; i < n; i++) {
