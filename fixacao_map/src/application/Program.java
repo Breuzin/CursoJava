@@ -39,6 +39,8 @@ public class Program {
 		} catch (IOException e) {
 			System.out.println(e.getMessage());
 		}
+		
+		sc.close();
 	}
 }
 
