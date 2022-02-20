@@ -20,7 +20,7 @@ public class Program {
 		list.add(new Product("HeadSet", 300.00));
 		list.add(new Product("Computer", 3000.00));
 		
-		list.forEach(Product::staticPriceUpdate);
+		list.forEach(p -> p.nonStaticPriceUpdate(p));
 		
 		list.forEach(System.out::println);
 	}
