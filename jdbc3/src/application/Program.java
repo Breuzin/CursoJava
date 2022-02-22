@@ -12,6 +12,7 @@ import db.DB;
 
 public class Program {
 
+	@SuppressWarnings("resource")
 	public static void main(String[] args) {
 
 		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
@@ -33,8 +34,7 @@ public class Program {
 			st.setDate(3, new java.sql.Date(sdf.parse("20/01/2004").getTime()));
 			st.setDouble(4, 4560.00);
 			st.setInt(5, 4);
-			
-			
+						
 			st = conn.prepareStatement(
 					"insert into department (Name) values ('D1'),('D2')",
 					Statement.RETURN_GENERATED_KEYS);
